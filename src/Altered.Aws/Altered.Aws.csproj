@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Amazon.Lambda.ApplicationLoadBalancerEvents" Version="1.0.0" />
+    <PackageReference Include="Amazon.Lambda.CloudWatchEvents" Version="1.0.0" />
+    <PackageReference Include="Amazon.Lambda.CloudWatchLogsEvents" Version="1.1.0" />
+    <PackageReference Include="Amazon.Lambda.S3Events" Version="1.1.0" />
+    <PackageReference Include="Amazon.Lambda.Serialization.Json" Version="1.5.0" />
+    <PackageReference Include="AWSSDK.AutoScaling" Version="3.3.9.4" />
+    <PackageReference Include="AWSSDK.CloudWatch" Version="3.3.11" />
+    <PackageReference Include="AWSSDK.CloudWatchLogs" Version="3.3.7.25" />
+    <PackageReference Include="AWSSDK.CodeBuild" Version="3.3.23.1" />
+    <PackageReference Include="AWSSDK.CodePipeline" Version="3.3.7" />
+    <PackageReference Include="AWSSDK.ECS" Version="3.3.24.1" />
+    <PackageReference Include="AWSSDK.ElasticLoadBalancing" Version="3.3.3.45" />
+    <PackageReference Include="AWSSDK.ElasticLoadBalancingV2" Version="3.3.14.4" />
+    <PackageReference Include="AWSSDK.S3" Version="3.3.31.24" />
+    <PackageReference Include="AWSSDK.SimpleSystemsManagement" Version="3.3.41.3" />
+    <PackageReference Include="CsvHelper" Version="12.1.2" />
+    <PackageReference Include="Elasticsearch.Net" Version="6.5.1" />
+    <PackageReference Include="Nito.AsyncEx" Version="5.0.0-pre-06" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.4.0" />
+    <PackageReference Include="System.Memory" Version="4.5.2" />
+    <PackageReference Include="System.Reactive.Linq" Version="4.1.3" />
+    <PackageReference Include="System.Runtime.Caching" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Altered.Pipeline\Altered.Pipeline.csproj" />
+  </ItemGroup>
+
+</Project>
