@@ -17,7 +17,7 @@ phases:
       - dotnet pack src/Altered.Shared/Altered.Shared.csproj                                                              -p:Version=$VERSION -c Release --include-symbols -p:SymbolPackageFormat=snupkg
       - dotnet pack src/Altered.Pipeline/Altered.Pipeline.csproj                                                          -p:Version=$VERSION -c Release --include-symbols -p:SymbolPackageFormat=snupkg
       - dotnet pack src/Altered.Mvc/Altered.Mvc.csproj                                                                    -p:Version=$VERSION -c Release --include-symbols -p:SymbolPackageFormat=snupkg
-      - dotnet pack src/Altered.Mvc/Altered.Aws.csproj                                                                    -p:Version=$VERSION -c Release --include-symbols -p:SymbolPackageFormat=snupkg
+      - dotnet pack src/Altered.Aws/Altered.Aws.csproj                                                                    -p:Version=$VERSION -c Release --include-symbols -p:SymbolPackageFormat=snupkg
       - dotnet pack src/Altered.TestDataCollector/Altered.TestDataCollector.csproj                                        -p:Version=$VERSION -c Release --include-symbols -p:SymbolPackageFormat=snupkg
       - dotnet nuget push src/Altered.Shared/bin/Release/Altered.Shared.$VERSION.nupkg                                    -k $NUGET_API_KEY -s https://api.nuget.org/v3/index.json || true
       - dotnet nuget push src/Altered.Pipeline/bin/Release/Altered.Pipeline.$VERSION.nupkg                                -k $NUGET_API_KEY -s https://api.nuget.org/v3/index.json || true
